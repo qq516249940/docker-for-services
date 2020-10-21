@@ -1,0 +1,9 @@
+.env
+logs
+.idea
+nginx/sites/*.conf
+tengine/sites/*.conf
+php-worker/supervisord.d/*.conf
+php-fpm/supervisord.d/*.conf
+php-worker/supervisord.conf
+redis/redis.conf
