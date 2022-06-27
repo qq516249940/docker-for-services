@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+  php:
+    tty: true # Enables debugging capabilities when attached to this container.
+    image: 516249940/php:latest
+    ports:
+      - 9200:9000
+    volumes:
+    ##挂载路径最好一样，方便寻找
+      - /www/wwwroot/mx-dmp/:/www/wwwroot/mx-dmp/
+      - /run/php-fpm/:/run/php-fpm/
+    restart: always
